@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App 下载</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .description {
+            margin: 10px 0;
+            font-size: 1em;
+            color: #666;
+        }
+        .download-buttons {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            max-width: 260px;
+        }
+        .download-button {
+            background-color: #1a73e8;
+            color: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            text-transform: uppercase;
+            text-decoration: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.2s;
+        }
+        .download-button.android {
+            background-color: #3ddc84;
+        }
+        .download-button.ios {
+            background-color: #000;
+        }
+        .download-button:hover {
+            filter: brightness(90%);
+        }
+        .app-image {
+            max-width: 80%;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            .download-buttons {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="description">
+        安卓手机请直
+        接下载
+    </div>
+    <div class="download-buttons">
+    <a href="https://www.yuanxiapi.cn/api/lanzou/?url=https://wwzs.lanzouj.com/iRho01l6lz6b&pwd=548q&type=down" class="download-button android" target="_blank">安卓下载</a>
+    </div>
+    <div class="description">
+    iOS请按照下面的教程下载
+    </div>
+    <div class="download-buttons">
+    <a href="https://www.yuanxiapi.cn/api/lanzou/?url=https://wwzs.lanzouj.com/iqEWy1l7h1ha&pwd=agpq&type=down" class="download-button ios" target="_blank">iOS下载</a>
+    </div>
+    <img src="https://img13.360buyimg.com/ddimg/jfs/t1/230116/19/12641/250550/65a5ff21F85daab3f/dc86e109bdf28a14.png" class="app-image" alt="App Promo Image">
+    
+    </body>
+    </html>
